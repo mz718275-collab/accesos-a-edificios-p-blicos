@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: accesomap-web
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: VITE_GOOGLE_MAPS_API_KEY
+        sync: false
+      - key: SQL_HOST
+        sync: false
+      - key: SQL_PORT
+        value: "5432"
+      - key: SQL_DB_NAME
+        value: postgres
+      - key: SQL_USER
+        sync: false
+      - key: SQL_PASSWORD
+        sync: false
+      - key: SQL_SSL
+        value: "true"

@@ -1,0 +1,6 @@
+{
+  "name": "AccesoMap",
+  "description": "Registro y visualización geográfica de puntos de acceso edilicio con rampa o escalones en PostgreSQL y Google Maps.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
